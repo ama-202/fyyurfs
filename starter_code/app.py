@@ -42,7 +42,7 @@ migrate=Migrate(app,db)
 #     "start_time": "2019-05-21T21:30:00.000Z"
 # classShows = db.Table('Shows',
 
-#here
+#i was here
 class Show(db.Model):
   id = db.Column(db.Integer, primary_key=True)
   Venue_id=db.Column(db.Integer,db.ForeignKey('Venue.id'),primary_key=True)
@@ -104,9 +104,7 @@ class Venue(db.Model):
 
     #artists = db.relationship('Artist',secondary='Show', backref=db.backref('venues', lazy=True))
 #########
-    # past_shows=db.Column(db.String())
-    # upcoming_shows=db.Column(db.String())
-    # past_shows_count=db.Column(db.Integer)
+    
 
     
     # artists=db.relationship('Show',back_populates='artist')
@@ -132,12 +130,7 @@ class Artist(db.Model):
 #https://stackoverflow.com/questions/11578070/sqlalchemy-instrumentedlist-object-has-no-attribute-filter
     shows = db.relationship('Show', backref="artist", lazy='dynamic')
 
-    # venues=db.relationship('Venue',secondary=Show, backref=db.backref('artists', lazy=True))
-    # venues=db.relationship('Show',back_populates='venue')
-    # past_shows=db.Column(db.String())
-    # upcoming_shows=db.Column(db.String())
-    # past_shows_count=db.Column(db.Integer)
-    # upcoming_shows_count=db.Column(db.Integer)
+    
 #db.create_all()
     # TODO: implement any missing fields, as a database migration using Flask-Migrate
 #db.create_all()
