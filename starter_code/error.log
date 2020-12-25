@@ -1,1 +1,175 @@
 
+2020-12-25 09:17:43,396 INFO: errors [in c:\Users\Reema\Downloads\testing\fyyurfs\starter_code\app.py:948]
+2020-12-25 09:17:50,711 ERROR: Exception on /venues [GET] [in C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Reema\Downloads\testing\fyyurfs\starter_code\app.py", line 185, in venues
+    venues = Venue.query.group_by(Venue.id, Venue.state, Venue.city).all()
+NameError: name 'Venue' is not defined
+2020-12-25 09:17:55,937 ERROR: Exception on /artists [GET] [in C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Reema\Downloads\testing\fyyurfs\starter_code\app.py", line 522, in artists
+    query= Artist.query.all()
+NameError: name 'Artist' is not defined
+2020-12-25 09:17:59,706 ERROR: Exception on /shows [GET] [in C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Reema\Downloads\testing\fyyurfs\starter_code\app.py", line 824, in shows
+    allshows = Show.query.all()
+NameError: name 'Show' is not defined
+2020-12-25 09:18:26,528 INFO: errors [in c:\Users\Reema\Downloads\testing\fyyurfs\starter_code\app.py:948]
+2020-12-25 09:18:30,422 ERROR: Exception on /venues [GET] [in C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Reema\Downloads\testing\fyyurfs\starter_code\app.py", line 185, in venues
+    venues = Venue.query.group_by(Venue.id, Venue.state, Venue.city).all()
+NameError: name 'Venue' is not defined
+2020-12-25 09:18:34,829 ERROR: Exception on /artists [GET] [in C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Reema\Downloads\testing\fyyurfs\starter_code\app.py", line 522, in artists
+    query= Artist.query.all()
+NameError: name 'Artist' is not defined
+2020-12-25 09:18:38,328 ERROR: Exception on /venues/create [GET] [in C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Reema\Downloads\testing\fyyurfs\starter_code\app.py", line 433, in create_venue_form
+    form = VenueForm()
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-12-25 09:18:41,336 ERROR: Exception on /artists [GET] [in C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Reema\Downloads\testing\fyyurfs\starter_code\app.py", line 522, in artists
+    query= Artist.query.all()
+NameError: name 'Artist' is not defined
+2020-12-25 09:38:50,372 INFO: errors [in c:\Users\Reema\Downloads\testing\fyyurfs\starter_code\app.py:950]
+2020-12-25 09:38:54,065 ERROR: Exception on /venues [GET] [in C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Reema\Downloads\testing\fyyurfs\starter_code\app.py", line 187, in venues
+    venues = Venue.query.group_by(Venue.id, Venue.state, Venue.city).all()
+NameError: name 'Venue' is not defined
+2020-12-25 09:39:04,867 ERROR: Exception on /venues [GET] [in C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Reema\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Reema\Downloads\testing\fyyurfs\starter_code\app.py", line 187, in venues
+    venues = Venue.query.group_by(Venue.id, Venue.state, Venue.city).all()
+NameError: name 'Venue' is not defined
